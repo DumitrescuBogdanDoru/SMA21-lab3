@@ -28,7 +28,7 @@ public class MainIntentActivity extends AppCompatActivity {
         bGoogle = (Button) findViewById(R.id.bGoogle);
         bTel = (Button) findViewById(R.id.bTel);
         bLaunchGoogle = (Button) findViewById(R.id.bLaunchGoogle);
-        bLaunchTel = (Button) findViewById(R.id.bLauchTel);
+        bLaunchTel = (Button) findViewById(R.id.bLaunchTel);
 
         bGoogle.setOnClickListener(new View.OnClickListener() {
             @Override

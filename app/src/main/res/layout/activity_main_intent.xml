@@ -38,7 +38,7 @@
         android:text="LAUNCH GOOGLE" />
 
     <Button
-        android:id="@+id/bLauchTel"
+        android:id="@+id/bLaunchTel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/bLaunchGoogle"

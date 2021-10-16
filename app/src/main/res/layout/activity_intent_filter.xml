@@ -13,6 +13,7 @@
         android:layout_marginStart="155dp"
         android:layout_marginLeft="155dp"
         android:layout_marginTop="300dp"
+        android:textColor="#000000"
         tools:layout_editor_absoluteX="204dp"
         tools:layout_editor_absoluteY="261dp" />
 </RelativeLayout>
