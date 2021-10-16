@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.helloworld">
 
     <application
@@ -11,7 +12,16 @@
         android:theme="@style/Theme.HelloWorld">
         <activity
             android:name=".intents.IntentFilterActivity"
-            android:exported="true" />
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <action android:name="MSA.LAUNCH"/>
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+            <data android:scheme="https" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".intents.MainIntentActivity"
             android:exported="true" >
