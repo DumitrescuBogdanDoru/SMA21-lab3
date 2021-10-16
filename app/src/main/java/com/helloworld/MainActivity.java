@@ -16,6 +16,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.helloworld.lifecycle.ActivityA;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     EditText eName;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Button bShare;
     Button bSearch;
     Spinner spinner;
+    Button bLifecycle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View v) {
                 Search(v);
+            }
+        });
+
+        // Lifecycle
+        bLifecycle = (Button) findViewById(R.id.bLifecycle);
+
+        bLifecycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ActivityA.class));
             }
         });
     }
